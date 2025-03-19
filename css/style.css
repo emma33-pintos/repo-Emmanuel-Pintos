@@ -1,0 +1,198 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #add8e6;
+}
+header{
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+nav ul li a.active{
+    color: red;
+}
+nav ul li a img{
+    width: 20px;
+    height: 20px;
+}
+.logo{
+    margin-top: auto;
+    width: 100%;
+    background-color: aqua;
+}
+.logosup{
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    transform: scale(0.4);
+}
+.barranav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    background-color: cadetblue;
+}
+main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.intro p, .quienes-somos, .nuestra-historia, .productos, .contacto,.mapa{
+    margin-bottom: 20px;
+    
+}
+.carousel-inner{
+    width: 50%;
+    height: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+.imagen-lateral{
+    flex: 1;
+    margin-right: 20px;
+}
+.imagen-lateral img{
+    max-width: 50%;
+    height: auto;
+}
+.quienes-somos,.nuestra-historia,.productos,.contacto{
+   flex: 2; 
+}
+.productos{
+    text-align: center;
+}
+.producto{
+    display: inline-block;
+    width: 23%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 1%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: left;
+}
+.producto img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.producto h2, .producto p{
+    margin: 10px 0;
+}
+.producto button{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.producto button:hover{
+    background-color: darkgreen;
+}
+.contacto h1,.contacto p,.horarios,.formas-de-pago{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.contacto form,.horarios,.formas-de-pago{
+    display:flex;
+    flex-direction: column;
+}
+.contacto label,.horarios p,.formas-de-pago p{
+    margin-top: 10px;
+}
+.contacto input,.contacto textarea{
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contacto .enviar{
+    margin-top: 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contacto,.enviar:hover{
+    background-color: darkorchid;
+}
+footer{
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100px;
+    bottom: 0;
+}
+#map{
+    width: 100%;
+    height:  auto;
+    display: grid;
+    justify-content: center;
+}
+h1{
+    color: #333;
+    text-align: center;
+}
+h2{
+    color: #555;
+    text-align: center;
+}
+h2.horarios{
+    color: purple;
+}
+h2.formas-de-pago{
+    color: green;
+}
+.formas-de-pago p{
+    margin: 10px 0;
+    text-align: center;
+}
+@media (max-width:768px) {
+    nav ul li{
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+    main{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .producto{
+        width: 100%;
+        margin: 10px 0;
+    }
+    footer {
+        font-size: 14px;
+    }
+}
+@media (min-width:769px) {
+    nav ul li{
+        display: inline-block;
+    }
+    .producto{
+        width: 23%;
+    }
+}

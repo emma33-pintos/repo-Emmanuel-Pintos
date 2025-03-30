@@ -4,8 +4,12 @@ body{
     padding: 0;
     background-color: #add8e6;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 header{
-    background-color: #f8f8f8;
+    background-color: #add8e6;
     padding: 20px;
     text-align: center;
 }
@@ -29,9 +33,12 @@ nav ul li a img{
     height: 20px;
 }
 .logo{
-    margin-top: auto;
+    margin: auto;
     width: 100%;
-    background-color: aqua;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #add8e6;
 }
 .logosup{
     width: 30%;
@@ -52,19 +59,7 @@ main{
     flex-direction: column;
 }
 .intro p, .quienes-somos, .nuestra-historia, .productos, .contacto,.mapa{
-    margin-bottom: 20px;
-    
-}
-.carousel-inner{
-    width: 50%;
-    height: auto;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    
-    
+    margin-bottom: 20px;   
 }
 .imagen-lateral{
     flex: 1;
@@ -90,9 +85,16 @@ main{
     border-radius: 10px;
     text-align: left;
 }
+.producto .imagen-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 200px; 
+}
 .producto img{
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
+    object-fit: contain;
     border-radius: 5px;
 }
 .producto h2, .producto p{
@@ -186,13 +188,5 @@ h2.formas-de-pago{
     }
     footer {
         font-size: 14px;
-    }
-}
-@media (min-width:769px) {
-    nav ul li{
-        display: inline-block;
-    }
-    .producto{
-        width: 23%;
     }
 }

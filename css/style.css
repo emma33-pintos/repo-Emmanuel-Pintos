@@ -4,12 +4,17 @@ body{
     padding: 0;
     background-color: #add8e6;
 }
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
 }
 header{
     background-color: #add8e6;
+=======
+header{
+    background-color: #f8f8f8;
+>>>>>>> 30a90becd56cb5a1594e78c1638dd3a6ee73bcbe
     padding: 20px;
     text-align: center;
 }
@@ -33,12 +38,18 @@ nav ul li a img{
     height: 20px;
 }
 .logo{
+<<<<<<< HEAD
     margin: auto;
     width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
     background-color: #add8e6;
+=======
+    margin-top: auto;
+    width: 100%;
+    background-color: aqua;
+>>>>>>> 30a90becd56cb5a1594e78c1638dd3a6ee73bcbe
 }
 .logosup{
     width: 30%;
@@ -59,7 +70,23 @@ main{
     flex-direction: column;
 }
 .intro p, .quienes-somos, .nuestra-historia, .productos, .contacto,.mapa{
+<<<<<<< HEAD
     margin-bottom: 20px;   
+=======
+    margin-bottom: 20px;
+    
+}
+.carousel-inner{
+    width: 50%;
+    height: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+>>>>>>> 30a90becd56cb5a1594e78c1638dd3a6ee73bcbe
 }
 .imagen-lateral{
     flex: 1;
@@ -85,6 +112,7 @@ main{
     border-radius: 10px;
     text-align: left;
 }
+<<<<<<< HEAD
 .producto .imagen-container {
     display: flex;
     justify-content: center; 
@@ -95,6 +123,11 @@ main{
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+=======
+.producto img{
+    max-width: 100%;
+    height: auto;
+>>>>>>> 30a90becd56cb5a1594e78c1638dd3a6ee73bcbe
     border-radius: 5px;
 }
 .producto h2, .producto p{
@@ -141,11 +174,20 @@ main{
     background-color: darkorchid;
 }
 footer{
+<<<<<<< HEAD
     background-color: #cc0bf3;
     padding: 10px;
     text-align: center;
     width: 100%;
     margin-top: auto;
+=======
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100px;
+    bottom: 0;
+>>>>>>> 30a90becd56cb5a1594e78c1638dd3a6ee73bcbe
 }
 #map{
     width: 100%;
@@ -189,3 +231,14 @@ h2.formas-de-pago{
         font-size: 14px;
     }
 }
+<<<<<<< HEAD
+=======
+@media (min-width:769px) {
+    nav ul li{
+        display: inline-block;
+    }
+    .producto{
+        width: 23%;
+    }
+}
+>>>>>>> 30a90becd56cb5a1594e78c1638dd3a6ee73bcbe

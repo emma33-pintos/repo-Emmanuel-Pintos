@@ -141,12 +141,11 @@ main{
     background-color: darkorchid;
 }
 footer{
-    background-color: #f8f8f8;
+    background-color: #cc0bf3;
     padding: 10px;
     text-align: center;
-    position: fixed;
-    width: 100px;
-    bottom: 0;
+    width: 100%;
+    margin-top: auto;
 }
 #map{
     width: 100%;

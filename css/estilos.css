@@ -1,10 +1,251 @@
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 61 \2502    box-shadow: 0 2px 5px rgba($black, 0.1);\d\a    \2502                               ^^^^^^\a    \2575 \a   scss\\estilos.scss 61:30  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #add8e6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: square;
+  padding: 0;
+  margin-top: 10px;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+nav ul li a.active {
+  color: red;
+}
+nav ul li a img {
+  width: 20px;
+  height: 20px;
+}
+
+.logo {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #add8e6;
+}
+
+.logosup {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  transform: scale(0.4);
+}
+
+.barranav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  background-color: cadetblue;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro p,
+.quienes-somos,
+.nuestra-historia,
+.productos,
+.contacto,
+.mapa {
+  margin-bottom: 20px;
+}
+
+.imagen-lateral {
+  flex: 1;
+  margin-right: 20px;
+}
+.imagen-lateral img {
+  max-width: 50%;
+  height: auto;
+}
+
+.quienes-somos,
+.nuestra-historia,
+.productos,
+.contacto {
+  flex: 2;
+}
+
+.productos {
+  text-align: center;
+}
+
+.producto {
+  display: inline-block;
+  width: 23%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 1%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: left;
+}
+.producto .imagen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.producto img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+.producto h2,
+.producto p {
+  margin: 10px 0;
+}
+.producto button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.producto button:hover {
+  background-color: darkgreen;
+}
+
+.contacto,
+.horarios,
+.formas-de-pago {
+  margin-bottom: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+}
+.contacto label {
+  margin-top: 10px;
+}
+.contacto input,
+.contacto textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contacto .enviar {
+  margin-top: 20px;
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contacto .enviar:hover {
+  background-color: darkorchid;
+}
+
+.horarios p,
+.formas-de-pago p {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #cc0bf3;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+#map {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  color: #555;
+  text-align: center;
+}
+h2.horarios {
+  color: purple;
+}
+h2.formas-de-pago {
+  color: green;
+}
+
+.formas-de-pago p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .producto {
+    width: 100%;
+    margin: 10px 0;
+  }
+  footer {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

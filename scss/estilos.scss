@@ -12,11 +12,12 @@ $button-green: green;
 $button-green-hover: darkgreen;
 $contact-btn-bg: purple;
 $contact-btn-hover: darkorchid;
-$footer-bg: #f8f8f8;
+$footer-bg: #cc0bf3;
 $h1-color: #333;
 $h2-color: #555;
 $h2-horarios-color: purple;
 $h2-formas-de-pago-color: green;
+$black: #000000;
 @mixin transition($args...) {
   transition: $args;
 }
@@ -226,9 +227,8 @@ footer {
   background-color: $footer-bg;
   padding: 10px;
   text-align: center;
-  position: fixed;
-  width: 100px;
-  bottom: 0;
+  width: 100%;
+  margin-top: auto;
 }
 
 #map {

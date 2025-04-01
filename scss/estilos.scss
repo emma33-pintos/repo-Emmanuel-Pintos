@@ -1,0 +1,285 @@
+$body-bg: #add8e6;
+$header-bg: #000000;
+$header-padding: 15px 0;
+$nav-list-style: square;
+$nav-margin-top: 10px;
+$nav-link-color: white;
+$active-link-color: red;
+$logo-bg: $body-bg;
+$barranav-bg: cadetblue;
+$product-border: #ccc;
+$button-green: green;
+$button-green-hover: darkgreen;
+$contact-btn-bg: purple;
+$contact-btn-hover: darkorchid;
+$footer-bg: #f8f8f8;
+$h1-color: #333;
+$h2-color: #555;
+$h2-horarios-color: purple;
+$h2-formas-de-pago-color: green;
+@mixin transition($args...) {
+  transition: $args;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $body-bg;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: $header-bg;
+  color: white;
+  width: 100%;
+  padding: $header-padding;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 5px rgba($black, 0.1);
+  z-index: 1000;
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+}
+nav {
+  ul {
+    list-style-type: $nav-list-style;
+    padding: 0;
+    margin-top: $nav-margin-top;
+    li {
+      display: inline;
+      margin: 0 15px;
+
+      a {
+        color: $nav-link-color;
+        text-decoration: none;
+        font-weight: bold;
+        @include transition(all 0.3s);
+        &:hover {
+          text-decoration: underline;
+        }
+        &.active {
+          color: $active-link-color;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  margin: auto;
+  width: 100%;
+  @include flex-center;
+  background-color: $body-bg;
+}
+
+.logosup {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  transform: scale(0.4);
+}
+
+.barranav {
+  @include flex-center;
+  flex-direction: row-reverse;
+  background-color: $barranav-bg;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro p,
+.quienes-somos,
+.nuestra-historia,
+.productos,
+.contacto,
+.mapa {
+  margin-bottom: 20px;
+}
+
+.imagen-lateral {
+  flex: 1;
+  margin-right: 20px;
+  img {
+    max-width: 50%;
+    height: auto;
+  }
+}
+
+.quienes-somos,
+.nuestra-historia,
+.productos,
+.contacto {
+  flex: 2;
+}
+
+.productos {
+  text-align: center;
+}
+
+.producto {
+  display: inline-block;
+  width: 23%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 1%;
+  border: 1px solid $product-border;
+  border-radius: 10px;
+  text-align: left;
+
+  .imagen-container {
+    @include flex-center;
+    height: 200px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+
+  h2,
+  p {
+    margin: 10px 0;
+  }
+
+  button {
+    background-color: $button-green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    @include transition(background-color 0.3s);
+    &:hover {
+      background-color: $button-green-hover;
+    }
+  }
+}
+
+.contacto,
+.horarios,
+.formas-de-pago {
+  margin-bottom: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin-top: 10px;
+  }
+  input,
+  textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid $product-border;
+    border-radius: 5px;
+  }
+  .enviar {
+    margin-top: 20px;
+    background-color: $contact-btn-bg;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    @include transition(background-color 0.3s);
+    &:hover {
+      background-color: $contact-btn-hover;
+    }
+  }
+}
+
+.horarios,
+.formas-de-pago {
+  p {
+    margin-top: 10px;
+  }
+}
+
+footer {
+  background-color: $footer-bg;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100px;
+  bottom: 0;
+}
+
+#map {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+}
+
+h1 {
+  color: $h1-color;
+  text-align: center;
+}
+
+h2 {
+  color: $h2-color;
+  text-align: center;
+  &.horarios {
+    color: $h2-horarios-color;
+  }
+  &.formas-de-pago {
+    color: $h2-formas-de-pago-color;
+  }
+}
+
+.formas-de-pago {
+  p {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    ul {
+      li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+      }
+    }
+  }
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .producto {
+    width: 100%;
+    margin: 10px 0;
+  }
+  footer {
+    font-size: 14px;
+  }
+}

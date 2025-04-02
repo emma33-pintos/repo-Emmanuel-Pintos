@@ -5,11 +5,21 @@ body{
     background-color: #add8e6;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
-}
+};
+=======
 header{
+    background-color: #f8f8f8
+>>>>>>> 30a90becd56cb5a1594e78c1638dd3a6ee73bcbe
+header{;
+=======
+header{
+    background-color: #f8f8f8
+>>>>>>> 30a90becd56cb5a1594e78c1638dd3a6ee73bcbe
     background-color: #add8e6;
 =======
 header{
@@ -38,18 +48,12 @@ nav ul li a img{
     height: 20px;
 }
 .logo{
-<<<<<<< HEAD
     margin: auto;
     width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
     background-color: #add8e6;
-=======
-    margin-top: auto;
-    width: 100%;
-    background-color: aqua;
->>>>>>> 30a90becd56cb5a1594e78c1638dd3a6ee73bcbe
 }
 .logosup{
     width: 30%;
@@ -60,17 +64,46 @@ nav ul li a img{
 .barranav{
     display: flex;
     align-items: center;
+    margin-bottom: 20px;   
+=======
+    justify-content: ce;
+    
+}
+.carousel-inner{
+    width: 50%;
+    height: auto;
+    display: block;
+    align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auton
+    
+ ter
+>>>>>>> 30a90becd56cb5a1594e78c1638dd3a6ee73bcbe;
     flex-direction: row-reverse;
     background-color: cadetblue;
 }
 main{
-    padding: 20px;
+    margin-bottom: 20px;   
+=======
+    padding: 20px;;
+    
+}
+.carousel-inner{
+    width: 50%;
+    height: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto
+    
+ 
+>>>>>>> 30a90becd56cb5a1594e78c1638dd3a6ee73bcbe
     display: flex;
     flex-direction: column;
 }
 .intro p, .quienes-somos, .nuestra-historia, .productos, .contacto,.mapa{
-<<<<<<< HEAD
     margin-bottom: 20px;   
 =======
     margin-bottom: 20px;
